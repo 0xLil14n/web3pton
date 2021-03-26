@@ -10,6 +10,8 @@ Deploy to Rinkeby
 npm install -g truffle
 truffle compile
 
+Verify contract on etherscan:
+truffle run verify contractName --network rinkeby --license MIT
 
 TO-DO:
 - set up api_key for etherscan
