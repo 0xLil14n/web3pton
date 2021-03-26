@@ -64,6 +64,5 @@ contract PelotonNFT is ERC721, VRFConsumerBase {
             _isApprovedOrOwner(_msgSender(), tokenId), "ERC721: transfer caller is not owner nor approved"
         );
         _setTokenURI(tokenId, _tokenURI);
-
     }
 }
