@@ -54,4 +54,16 @@ contract PelotonNFT is ERC721, VRFConsumerBase {
         );
         _safeMint(requestToSender[requestId], newId); // minting token with ERC721 safeMint
     }
+    function setTokenURI(uint256 tokenId, string memory _tokenURI) public {
+        // TODO: potentially use filecoin here?
+        // purpose of TokenURIs: it's super expensive to deploy images/files to the blockchain
+        // token URIs define where the file is saved
+        // IPFS is a decentralized way of doing this
+        // filecoin would potentially be good to implement in its stead??????
+        require(
+            _isApprovedOrOwner(_msgSender(), tokenId), "ERC721: transfer caller is not owner nor approved"
+        );
+        _setTokenURI(tokenId, _tokenURI);
+
+    }
 }
