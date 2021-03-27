@@ -7,9 +7,9 @@ import "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol";
 
 contract PelotonNFT is ERC721, VRFConsumerBase {
     bytes32 public keyHash; // TODO make this internal
-    uint256 public vrfCoordinator;
+    address public vrfCoordinator;
     uint256 internal fee;
-    bytes32 internal keyHash;
+
     uint256 public randomResult;
 
     struct Character {
@@ -24,9 +24,10 @@ contract PelotonNFT is ERC721, VRFConsumerBase {
     mapping(bytes32 => address) requestToSender;
     mapping(bytes32 => uint256) requestToTokenId;
 
-    constructor(address _VRFCoordinator, address _LinkToken, bytes32 _keyHash) public
+    constructor(address _VRFCoordinator, address _LinkToken, bytes32 _keyHash)
+    public
     VRFConsumerBase(_VRFCoordinator, _LinkToken)
-    ERC721("PelotonNFT", "PtoNFT") public {
+    ERC721("PelotonNFT", "PtoNFT") {
         keyHash = _keyHash;
         vrfCoordinator = _VRFCoordinator;
         fee = 0.1*10**18; // 0.1 LINK
@@ -44,6 +45,7 @@ contract PelotonNFT is ERC721, VRFConsumerBase {
         uint256 strength = (randomNumber % 100); // random number btwn 0 and 99
         uint dexterity = ((randomNumber % 10000) / 100); // using modulo to create more random numbers from just the one randomNumber
         uint256 stamina = ((randomNumber % 1000000) / 10000);
+        uint256 speed = ((randomNumber % 10) / 1000);
         characters.push(
             Character(
                 strength,
