@@ -19,3 +19,12 @@ TO-DO:
 mock health data server:
 npm install -g json-server
 json-server --watch mock-health-data.json
+
+TODO:
+- set up server w/ api info
+- integrate LINK w api to get workouts
+- create PTON token constructor/obj
+- create PTON token minter
+- requestTokens: if new workout, mint new tokens and send them to user
+- make FE to requestTokens
+- actually figure out how to integrate HealthKit api w contract
