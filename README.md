@@ -16,4 +16,6 @@ truffle run verify contractName --network rinkeby --license MIT
 TO-DO:
 - set up api_key for etherscan
 
-
+mock health data server:
+npm install -g json-server
+json-server --watch mock-health-data.json

@@ -22,7 +22,6 @@ contract PelotonNFT is ERC721, VRFConsumerBase {
     // mappings go here
     mapping(bytes32 => string) requestToCharacterName;
     mapping(bytes32 => address) requestToSender;
-    mapping(bytes32 => uint256) requestToTokenId;
 
     constructor(address _VRFCoordinator, address _LinkToken, bytes32 _keyHash)
     public
@@ -45,7 +44,7 @@ contract PelotonNFT is ERC721, VRFConsumerBase {
         uint256 strength = (randomNumber % 100); // random number btwn 0 and 99
         uint dexterity = ((randomNumber % 10000) / 100); // using modulo to create more random numbers from just the one randomNumber
         uint256 stamina = ((randomNumber % 1000000) / 10000);
-        uint256 speed = ((randomNumber % 10) / 1000);
+        uint256 speed = ((randomNumber % 100000) / 1000);
         characters.push(
             Character(
                 strength,

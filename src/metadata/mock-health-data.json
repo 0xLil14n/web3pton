@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "0xLil14n 8u",
+      "height": "5'9''",
+      "weight": 145.6,
+      "workouts": [
+        {
+          "id": 0,
+          "date": "April 14, 2021",
+          "duration": "37 minutes",
+          "caloriesBurned": 241,
+          "activity": "cycling"
+        },
+        {
+          "id": 1,
+          "date": "April 15, 2021",
+          "duration": "52 minutes",
+          "caloriesBurned": 570,
+          "activity": "jump roping"
+        }
+      ]
+    }
+  ]
+}

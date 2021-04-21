@@ -1,0 +1,19 @@
+{
+  "name":"Hackathon McTesterFace",
+  "description": "really slow token idk. overall just rly not physically good?? lol",
+  "image": "",
+  "attributes": [
+    {
+      "trait_type": "Strength",
+      "value": 81
+    },
+    {
+      "trait_type": "Speed",
+      "value": 0
+    },
+    {
+      "trait_type": "Stamina",
+      "value": 6
+    }
+  ]
+}

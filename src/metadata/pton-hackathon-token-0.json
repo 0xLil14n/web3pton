@@ -1,0 +1,19 @@
+{
+  "name":"Really really random",
+  "description": "tbh just trying out this whole AR token thing",
+  "image": "https://ipfs.io/ipfs/QmXQWRkTNPfA7MLRJTCJLtGyJRacdQPTeZSFPhUxLo5c3c?filename=Phone%20UI%20scene%20(copy).obj",
+  "attributes": [
+    {
+      "trait_type": "Strength",
+      "value": 98
+    },
+    {
+      "trait_type": "Speed",
+      "value": 10
+    },
+    {
+      "trait_type": "Stamina",
+      "value": 27
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name":"PTON Wife",
+  "description": "really likes working out. definitely not being held captive by peloton husband. loves social media",
+  "image": "https://ipfs.io/ipfs/QmaJc13sbvJmCTypGRoF4Duq2cLLUi8an58M5GRdCDoLPB?filename=ptonwife.jpeg",
+  "attributes": [
+    {
+      "trait_type": "Strength",
+      "value": 97
+    },
+    {
+      "trait_type": "Speed",
+      "value": 99
+    },
+    {
+      "trait_type": "Stamina",
+      "value": 62
+    }
+  ]
+}
