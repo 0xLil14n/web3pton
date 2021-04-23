@@ -19,6 +19,8 @@ TO-DO:
 mock health data server:
 npm install -g json-server
 json-server --watch mock-health-data.json
+use this: https://my-burger-api-222.herokuapp.com/data
+(it's not a burger api but I DO WHAT I CAN)
 
 TODO:
 - set up server w/ api info
